@@ -1,0 +1,27 @@
+.tile {
+	background-color: blueviolet;
+	aspect-ratio: 1/1;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+}
+
+.controls {
+	display: flex;
+	gap: 1rem;
+}
+
+.clicked {
+	background-color: aquamarine;
+}
+
+.board {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bomb {
+	background-color: red;
+}
