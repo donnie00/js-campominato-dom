@@ -8,20 +8,54 @@
 	font-size: 2.5rem;
 }
 
+.tile.clicked {
+	background-color: aquamarine;
+}
+
+.bomb.clicked {
+	background-color: red;
+}
+
 .controls {
 	display: flex;
 	gap: 1rem;
 }
 
-.clicked {
-	background-color: aquamarine;
-}
-
 .board {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 }
 
-.bomb {
-	background-color: red;
+.restart-overlay {
+	height: 100%;
+	width: 100%;
+	font-size: 10rem;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.654);
+
+	animation-name: flashingText;
+	animation-timing-function: linear;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes flashingText {
+	0% {
+		color: white;
+	}
+
+	50% {
+		color: transparent;
+	}
+
+	100% {
+		color: white;
+	}
 }
