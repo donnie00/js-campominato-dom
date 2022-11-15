@@ -3,7 +3,7 @@ const gameMode = document.getElementById('modeSelect');
 let bombs;
 
 playBtnEl.addEventListener('click', function () {
-	bombs = generateBombs(1, gameMode.value);
+	bombs = generateBombs(10, gameMode.value);
 	console.log(bombs);
 
 	createGrid(+gameMode.value);
